@@ -3,7 +3,7 @@ def assign_variables(input_value)
     new_variable = _                                #Remember how the variables work
     puts new_variable
   rescue
-    puts "Fix me, please!"
+    puts "Fix me, please! I'm assign_variables"
   end
 end
 
@@ -28,6 +28,14 @@ def bad_variable_declaration_example
     my variable = "Hello!"
     puts my variable + "world"
   rescue
-    puts "Fix me, please!"                          #Remember how the variables work
+    puts "Fix me, please! I'm bad_variable_declaration_example"       #Remember how the variables work
   end
 end
+
+#Please, change the parameters of the following lines. You can add a # at the start the line to prevent it from execute
+assign_variables("David")
+checking_the_datatype_of_a_value("David")
+input_your_name_for_a_gretting("David")
+upcasing_an_input("david")
+lowercasing_an_input("DAVID")
+bad_variable_declaration_example
