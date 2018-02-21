@@ -1,0 +1,5 @@
+lo único que no me quedo claro (o no recuerdo bien como usar) son algunos comandos de la command line, como awk? por ejemplo. 
+
+Git es muy facil de entender con la página Web de Git simple. 
+
+Estoy muy ansiosa de empezar con Ruby ya mismo. 
