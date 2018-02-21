@@ -38,12 +38,13 @@ Q: How can I create my SSH Keys?
 R: Please refer to => https://help.github.com/articles/connecting-to-github-with-ssh/
 
 
-==================================================================================================
-                                                                                                  |
-SELF WORK(Not mandatory but its a good thing to read):                                            |
-                                                                                                  |
-1. Ruby Koans: http://rubykoans.com/                                                              |
-2. Unix Philosophy: http://homepage.cs.uri.edu/~thenry/resources/unix_art/ch01s06.html#id2873540  |
-3. Git for begginers: http://rogerdudler.github.io/git-guide/                                     |
-                                                                                                  |
-==================================================================================================
+============================================================================================================
+                                                                                                            |
+SELF WORK(Not mandatory but its a good thing to read):                                                      |
+                                                                                                            |
+1. Ruby Koans: http://rubykoans.com/                                                                        |
+2. Unix Philosophy: http://homepage.cs.uri.edu/~thenry/resources/unix_art/ch01s06.html#id2873540            |
+3. Git for begginers: http://rogerdudler.github.io/git-guide/                                               |
+4. Create SSH Key :https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/|                                  |
+                                                                                                            |
+============================================================================================================
