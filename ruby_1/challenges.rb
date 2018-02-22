@@ -11,12 +11,16 @@
 
 3. Add the body to the funciont max_number that outputs the higher number between two inputs
 
-3. Add the body to the funciont is_in_my_range? that outputs if a number is between 0 and 100 
+3. Add the body to the funciont is_in_my_range? that outputs if a number is between 0 and 100
 
 =end
 
 def pascal
-  #Put your code here
+  print "Ingrese el numero de lineas"
+  a = "1"
+  for ( i= 0 ; i <=4 ; i++)
+    puts 
+
 end
 
 def age
