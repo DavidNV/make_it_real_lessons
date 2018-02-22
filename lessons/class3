@@ -1,0 +1,41 @@
+ General objects
+
+Remember that most of the Ruby objects can be have like some primitive you want (String, Integer, Array, Hash)
+Use to_s, to_i, to_a in objects you think it can behave like that.
+
+
+
+Conditionals
+Every ruby object behaves as true in a boolean context except nil and false.
+
+Operators:
+  &&: similar to and
+  ||: similar to or
+  not: similar to !
+  <: less than
+  >: greater than
+  ==: eql to (use eql? instead)
+
+
+Several ways to loop at Ruby
+
+1. with for:
+
+  for i in some_collection
+    ...
+  end
+2. with while:
+
+  while some_condition
+    ...
+  end
+3. with times:
+
+  10.times do |i|
+    ...
+  end
+4. with each
+
+  collection.each do |my_value|
+    ...
+  end
