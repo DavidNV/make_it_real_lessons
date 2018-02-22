@@ -1,6 +1,6 @@
 def assign_variables(input_value)
   begin
-    new_variable = _                                #Remember how the variables work
+    new_variable = (input_value)                            #Remember how the variables work
     puts new_variable
   rescue
     puts "Fix me, please! I'm assign_variables"
@@ -25,8 +25,8 @@ end
 
 def bad_variable_declaration_example
   begin
-    my variable = "Hello!"
-    puts my variable + "world"
+    my_variable = "Hello!"
+    puts my_variable + "world"
   rescue
     puts "Fix me, please! I'm bad_variable_declaration_example"       #Remember how the variables work
   end
