@@ -16,7 +16,6 @@ Restrictions and expectations
   5 10 15 20 25
 
 =end
-
 class MultiplicationTable
 
   def build_table
@@ -40,4 +39,15 @@ class MultiplicationTable
   end
 end
 
-puts MultiplicationTable.new.build_table
+puts MultiplicationTable.new.build_table.inspect
+class Hammer
+  def initialize(material, peso, color)
+    @material = material
+    @peso = peso
+    @color = color
+  end
+  def poner_clavo
+  end
+  def sacar_clavo
+  end
+end
