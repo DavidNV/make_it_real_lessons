@@ -11,7 +11,7 @@
 
 3. Add the body to the funciont max_number that outputs the higher number between two inputs
 
-3. Add the body to the funciont is_in_my_range? that outputs if a number is between 0 and 100 
+3. Add the body to the funciont is_in_my_range? that outputs if a number is between 0 and 100
 
 =end
 
