@@ -16,28 +16,37 @@ Restrictions and expectations
   5 10 15 20 25
 
 =end
-class MultiplicationTable
 
-  def build_table
-    z = []
-    for i in 1..5
-      for j in 1..5
-        z[i,j]= [z,(i*j)]
+class MultiplicationTable
+  def build_table(size)
+    multiplication_array = []
+    for i in 1..size
+      for j in 1..size
+        multiplication_array.push(i*j)
       end
     end
-    z
+    multiplication_array
   end
 end
 
-puts MultiplicationTable.new.build_table.inspect
-class Hammer
-  def initialize(material, peso, color)
-    @material = material
-    @peso = peso
-    @color = color
-  end
-  def poner_clavo
-  end
-  def sacar_clavo
-  end
-end
+puts "Digite el tamaño de la tabla"
+size = gets.chomp.to_i
+
+multiplication_table = MultiplicationTable.new.build_table(size)
+
+multiplication_table.each_slice(size) {|line| p line}
+
+
+
+
+# class Hammer
+#   def initialize(material, peso, color)
+#     @material = material
+#     @peso = peso
+#     @color = color
+#   end
+#   def poner_clavo
+#   end
+#   def sacar_clavo
+#   end
+# end
