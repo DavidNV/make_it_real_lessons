@@ -16,12 +16,28 @@ Restrictions and expectations
   5 10 15 20 25
 
 =end
-
 class MultiplicationTable
 
   def build_table
-    #You're code goes here
+    z = []
+    for i in 1..5
+      for j in 1..5
+        z[i,j]= [z,(i*j)]
+      end
+    end
+    z
   end
 end
 
-puts MultiplicationTable.new.build_table
+puts MultiplicationTable.new.build_table.inspect
+class Hammer
+  def initialize(material, peso, color)
+    @material = material
+    @peso = peso
+    @color = color
+  end
+  def poner_clavo
+  end
+  def sacar_clavo
+  end
+end
