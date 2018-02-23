@@ -16,21 +16,48 @@
 =end
 
 def pascal
-  print "Ingrese el numero de lineas"
-  a = "1"
-  for ( i= 0 ; i <=4 ; i++)
-    puts 
-
+  puts "Cuantas lineas desea"
+  a = gets.chomp
+  x = ""
+  for i in 1..a.to_i
+    x = x + 1.to_s
+    puts x
+  end
 end
 
 def age
-  #Put your code here
+  puts "Digite su edad"
+  my_age = gets.chomp.to_i
+  if my_age >= 18
+    puts "Eres un adulto"
+  elsif
+    puts "Eres menor de Edad"
+  end
 end
 
+
 def max_number(first_number, second_number)
-  #Put your code here
+  if first_number > second_number
+    puts "El mayor es el #{first_number}"
+  elsif
+    puts "El mayor es el #{second_number}"
+  end
 end
 
 def is_in_my_range?(number)
-  #Put your code here
+  if (0..100).include?(number)
+    puts "Si se encuentra en el rango"
+  else
+    puts "No esta en el rango"
+  end
 end
+pascal
+age
+puts "Digite el primer numero"
+first_number = gets.chomp
+puts "Digite el segundo numero"
+second_number = gets.chomp
+max_number(first_number,second_number)
+puts "Numero que desea buscar"
+number = gets.chomp.to_i
+is_in_my_range?(number)
