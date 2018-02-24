@@ -21,9 +21,9 @@ class MultiplicationTable
 
   def build_table
     table = []
-    for i in 1..5
+    for i in 1..4
       row = []
-      for j in 1..5
+      for j in 1..4
         row[j-1] = i * j
       end
       table[i-1] = row
