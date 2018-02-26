@@ -1,0 +1,10 @@
+Use the Ruby class declaration with CamelCase and its reserverd words, same for the attributes(features) and its methods(behaviors)
+Please add at least 2 methods and 4 attributes.
+
+Use a piece of paper to write down Ruby clasess for the following real objects:
+
+1. A Car
+2. A Tv
+3. A Chair
+4. An Actor
+5. An Actress

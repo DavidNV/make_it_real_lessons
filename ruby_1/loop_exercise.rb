@@ -20,7 +20,23 @@ Restrictions and expectations
 class MultiplicationTable
 
   def build_table
-    #You're code goes here
+    table = []
+    for i in 1..4
+      row = []
+      for j in 1..4
+        row[j-1] = i * j
+      end
+      table[i-1] = row
+    end
+    translate_table(table)
+  end
+
+  def translate_table(table)
+    translated_table = []
+    table.each do |row|
+      translated_table << row.join(" ")
+    end
+    translated_table
   end
 end
 
