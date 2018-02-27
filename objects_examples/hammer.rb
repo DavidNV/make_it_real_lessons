@@ -8,7 +8,7 @@ class Hammer
     puts weight
     @weight = weight
     @color = color
-    @material = material 
+    @material = material
   end
 
   def hit_things
