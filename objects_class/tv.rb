@@ -1,3 +1,7 @@
+class Entertainment
+  #relacionar tv con actriz
+end
+
 class Tv
 
   def initialize(smart, screen, size, energy)
@@ -18,8 +22,9 @@ class Tv
   def change_channels
   end
 
-  def go_to_netflix(netflix)
-    "Netflix Dashboard"
+  def go_to_netflix_show(netflix_show)
+    #para relacionar al tv con la actriz
+    "Netflix Show"
   end
 
   def go_to_store
@@ -47,3 +52,17 @@ end
 
 new_tv = Tv.new("smart", "flat", 52, 260)
 puts new_tv.show_menu
+
+
+class Actress < Entertainment
+  def initialize(netflix_show, genre, schedule, price)
+    @netflix_show = netflix_show
+    @genre = genre
+    @schedule = schedule
+    @price = price
+  end
+
+  def show_altered_carbon
+    go_to_netflix_show
+  end
+end
