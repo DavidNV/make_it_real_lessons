@@ -1,5 +1,11 @@
 class Hammer
+
+  attr_accessor :color
+  attr_reader :material
+  attr_writer :weight
+
   def initialize(weight, color, material)
+    puts weight
     @weight = weight
     @color = color
     @material = material 
@@ -47,6 +53,7 @@ end
 #puts Hammer.new(4, "blue", "Metal").kill_people("money")
 puts "-" * 20
 #puts Hammer.new(10, "pink", "Metal").kill_people("money")
-puts Hammer.new(10, "pink", "Metal").call_something
+new_hammer = Hammer.new(10, "pink", "Metal")
+puts new_hammer.methods
 puts "-" * 20
 #puts Hammer.new(6, "green", "Wood").kill_people("love")
