@@ -24,6 +24,6 @@ class Tv
     end
   end
   def actor
-    Actor.new("Alexander")
+    @actor ||= Actor.new("Alexander")
   end
 end

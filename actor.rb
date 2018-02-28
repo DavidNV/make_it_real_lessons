@@ -1,7 +1,8 @@
 class Actor < Entertainment
 
-  def initialize (actor)
-    @actor = actor
+  attr_accessor :actor_name
+  def initialize (actor_name)
+    @actor_name = actor_name
   end
 
   def casting
@@ -19,4 +20,4 @@ class Actor < Entertainment
   def working_in
     "I'm working in a Netflix series"
   end
-end 
+end
