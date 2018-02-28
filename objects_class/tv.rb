@@ -1,6 +1,4 @@
-class Entertainment
-  #relacionar tv con actriz
-end
+require './actress'
 
 class Tv
 
@@ -27,7 +25,7 @@ class Tv
   #vaya a la app de netflix
   def go_to_netflix_show(netflix_show)
     #para relacionar al tv con la actriz
-    "Netflix Show"
+    actress_show
   end
 
   #vaya al store
@@ -58,18 +56,3 @@ end
 
 new_tv = Tv.new("smart", "flat", 52, 260)
 puts new_tv.show_menu
-
-
-class Actress < Entertainment
-  def initialize(netflix_show, genre, schedule, price)
-    @netflix_show = netflix_show
-    @genre = genre
-    @schedule = schedule
-    @price = price
-  end
-
-  #show en el que sale
-  def show_altered_carbon
-    go_to_netflix_show
-  end
-end
