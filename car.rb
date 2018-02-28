@@ -1,3 +1,4 @@
+require './chair'
 class Car
   def initialize(model, power, type)
     @model = model
@@ -33,5 +34,28 @@ class Car
     else
       false
     end
+  end
+  def car_chair_style
+    @chair ||=Chair.new("sport")
+  end
+
+  def turn_on
+    "Welcome"
+  end
+
+  def turn_off
+    "Bye"
+  end
+
+  def set_autodrive(state)
+    if state.equal? "on"
+      "Tell location"
+      location = gets.chomp
+      if location.equal? location
+        "We have arrive"
+        state = "off"
+      end
+    else
+      "Autodrive is off"
   end
 end
