@@ -1,23 +1,29 @@
+require './actor'
 class Tv
 
-  def initialize(type, size, resolution)
-    @type = type
+  def initialize(channels, size, resolution, brand)
+    @channels = channels
     @size = size
     @resolution = resolution
+    @brand = brand
   end
 
-  def live_expectative
-    if @type ==  "LCD"
-      9
-    elsif @type == "Plasm"
-      3
-    elsif @type == "LED"
-      6
+  def turn_on
+    "TV is tuned on now."
+  end
+
+  def turn_off
+    "Bye!"
+  end
+
+  def change_channel(new_channel)
+    if (1..@channels).include?(new_channel)
+      "Changing to " + new_channel + "channel"
     else
-      "Not listed"
+      "Channel not available"
     end
   end
-
-  def
-
+  def actor
+    Actor.new("Alexander")
+  end
 end
