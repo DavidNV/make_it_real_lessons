@@ -1,28 +1,36 @@
+require './actor'
 class Tv
 
-  attr_accessor :b
-
-  def initialize
-    say_something
-    puts "1: #{self}"
-    self.b = "Bye"
+  def initialize(channels, actor_name)
+    @channels = channels
+    #@size = size
+    #@resolution = resolution
+    #@brand = brand
+    @actor = actor(actor_name)
   end
 
-  def say_something
-    puts "2: I'm givin up on you"
-    @h = "Hola"
-    @b = "Adios"
+  def turn_on
+    "TV is tuned on now."
   end
 
-  def self.another_thing
-    puts "3: #{self}"
+  def turn_off
+    "Bye!"
   end
+
+  def change_channel(new_channel)
+    if (1..@channels).include?(new_channel)
+      "Changing to " + new_channel + "channel"
+    else
+      "Channel not available"
+    end
+  end
+
+  def actor(actor_name)
+    Actor.new(actor_name)
+  end
+
+#  def actor(actor_name)
+#    @actor ||= Actor.new(actor_name)
+#  end
 
 end
-
-new_tv = Tv.new
-puts "4: #{new_tv.inspect}"
-puts new_tv.another_thing
-puts   "#" 
-puts Tv.say_something
-puts "5: #{Tv.another_thing}"
