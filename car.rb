@@ -17,14 +17,14 @@ class Car
     end
   end
 
-  def accel_speed
+  def speed
     if @power < 100
-      9.5
+      150
     elsif @power >= 100 && @power <= 200
-      8.1
+      250
     elsif @power > 200
-      6.9
-    end    
+      300
+    end
   end
 
   def is_classic?

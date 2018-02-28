@@ -8,11 +8,7 @@ class Chair
 
  def hold_weight
    if @material=="wood" || @material=="metal"
-     if @size > 100
-       "This chair resist 150 pounds"
-     else
-       "This chair can't hold more than 120 pounds"
-     end
+     chair_size
    else
      "Get a better chair"
    end
@@ -29,6 +25,16 @@ class Chair
      "You got to lift it"
    else
      "Get a different chair"
+   end
+ end
+
+ private
+
+ def chair_size
+   if @size > 100
+     "This chair resist 150 pounds"
+   else
+     "This chair can't hold more than 120 pounds"
    end
  end
 end
