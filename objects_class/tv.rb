@@ -11,6 +11,7 @@ class Tv
     @energy = energy
   end
 
+  #muestre el menu con las opciones
   def show_menu
     menu
     @home = home
@@ -19,26 +20,31 @@ class Tv
     @netflix = netflix
   end
 
+  #cambie los canales
   def change_channels
   end
 
+  #vaya a la app de netflix
   def go_to_netflix_show(netflix_show)
     #para relacionar al tv con la actriz
     "Netflix Show"
   end
 
+  #vaya al store
   def go_to_store
   end
 
-  private
+  #encender
   def turn_on
     "Welcome to this new experience"
   end
 
+  #apagar
   def turn_off
     "Bye"
   end
 
+  #menú
   def menu
     if @size >= 52
       puts "Home"
@@ -62,6 +68,7 @@ class Actress < Entertainment
     @price = price
   end
 
+  #show en el que sale
   def show_altered_carbon
     go_to_netflix_show
   end
