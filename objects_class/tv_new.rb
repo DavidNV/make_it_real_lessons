@@ -1,19 +1,22 @@
 require './actor'
+require './car'
 
 class TvNew
 
   attr_accessor :lina
+  attr_accessor :comercial
 
-  def initialize(app, genre)
+  def initialize(app, genre, comercial)
     @app = app
     @genre = genre
+    @comercial = comercial
   end
 
   def go_to_netflix
     if @app == "netflix"
       "This is Netflix what you want to watch?"
     else
-      "You're watching \'Sábados Felices\'"
+      "You're watching "
     end
   end
 
@@ -35,5 +38,14 @@ class TvNew
 
   def show_actor_genre
     lina.genre
+  end
+
+  def new_car(gps, location, speed)
+    @car_new ||= Car.new(gps, location, speed)
+  end
+
+
+  def go_to_comercial
+    car_new.speed
   end
 end

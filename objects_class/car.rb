@@ -1,4 +1,7 @@
 class Car
+
+  attr_accessor :location
+
   def initialize(gps, location, speed)
     @gps = gps
     @location = location
@@ -31,5 +34,3 @@ class Car
 
 end
 
-new_car = Car.new(10, "Bogotá", 30)
-p new_car.detect_accident
