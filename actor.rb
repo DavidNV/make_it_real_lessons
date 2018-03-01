@@ -3,24 +3,39 @@ class Actor
 
   attr_accessor :actor_name
   attr_accessor :new_car
-  def initialize (actor_name)
+  attr_accessor :fav_type
+
+  def initialize (actor_name, fav_type)
     @actor_name = actor_name
+    @fav_type = fav_type
   end
 
-  def casting
-    "Hello, I'm Jake and I'm an actor."
+  def casting(type)
+    if type.eql? @fav_type
+      "Accept the part"
+    else
+      "think about it"
+    end
   end
 
-  def accepting_an_award
-    "I want to thank..."
+  def do_tv_series?(ongoing_series)
+    if ongoing_series > 0
+      true
+    else
+      false
+    end
   end
 
-  def working_with(name)
-    "I'm looking forward to work with #{name}"
+  def doing_movie?(ongoing_movie)
+    if ongoing_movie > 0
+      true
+    else
+      false
+    end
   end
 
   def working_in
-    "I'm working in a Netflix series"
+    "right now working on " + ongoing_series + "Tv series and " + ongoing_movie + "movies"
   end
 
   def get_car(model, power, type)

@@ -24,7 +24,7 @@ class Tv
   end
 
   def actor
-    @actor ||= Actor.new("Alexander")
+    @actor ||= Actor.new("Alexander", "Action movie")
   end
 
   def find_actor_movie(actor, channels)
