@@ -25,12 +25,12 @@ class Tv
     end
   end
 
-  def actor(actor_name)
-    Actor.new(actor_name)
-  end
-
 #  def actor(actor_name)
-#    @actor ||= Actor.new(actor_name)
+#    Actor.new(actor_name)
 #  end
+
+  def actor(actor_name)
+    @actor ||= Actor.new(actor_name)
+  end
 
 end

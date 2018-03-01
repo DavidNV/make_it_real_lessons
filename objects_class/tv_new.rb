@@ -1,4 +1,8 @@
+require './actor'
+
 class TvNew
+  attr_accessor :lina
+
   def initialize(app, genre)
     @app = app
     @genre = genre
@@ -20,7 +24,12 @@ class TvNew
     end
   end
 
-end
+  def new_actor(show_name, actor_name)
+    @lina ||= Actor.new(show_name, actor_name)
+  end
 
-new_tv = TvNew.new("netflix", "scifi")
-p new_tv.altered_carbon_show
+  def show_actor_shows
+    lina.show_name
+    lina.actor
+  end
+end

@@ -22,7 +22,7 @@ class Car
   end
 
   def detect_accident
-    if @location == "Bogotá" && @gps <= 30
+    if @location.eql?("Bogotá") && @gps <= 30
       "There's an accident, you should change your route"
     else
       "I can't find anything"
@@ -31,5 +31,5 @@ class Car
 
 end
 
-new_car = Car.new(10, "Bogotá", 80)
+new_car = Car.new(10, "Bogotá", 30)
 p new_car.detect_accident
