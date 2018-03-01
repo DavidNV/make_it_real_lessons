@@ -1,4 +1,5 @@
-class Actor < Entertainment
+require '/car.rb'
+class Actor
 
   attr_accessor :actor_name
   def initialize (actor_name)
@@ -19,5 +20,9 @@ class Actor < Entertainment
 
   def working_in
     "I'm working in a Netflix series"
+  end
+
+  def get_car
+    new_car = Car.new(2017, 200, "sport")
   end
 end
