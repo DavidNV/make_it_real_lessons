@@ -2,6 +2,7 @@ require '/car.rb'
 class Actor
 
   attr_accessor :actor_name
+  attr_accessor :new_car
   def initialize (actor_name)
     @actor_name = actor_name
   end
@@ -15,14 +16,14 @@ class Actor
   end
 
   def working_with(name)
-    "I'm looking forward to work with"
+    "I'm looking forward to work with #{name}"
   end
 
   def working_in
     "I'm working in a Netflix series"
   end
 
-  def get_car
-    new_car = Car.new(2017, 200, "sport")
+  def get_car(model, power, type)
+    @new_car ||= Car.new(2017, 200, "sport")
   end
 end

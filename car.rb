@@ -35,8 +35,8 @@ class Car
       false
     end
   end
-  def car_chair_style
-    @chair ||=Chair.new("sport")
+  def car_chair_style(material, size, style)
+    @chair ||=Chair.new("wood", 50, "sport")
   end
 
   def turn_on
