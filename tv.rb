@@ -1,11 +1,10 @@
 require './actor'
 class Tv
 
-  def initialize(channels, size, resolution, brand)
+  def initialize(channels, size, resolution)
     @channels = channels
     @size = size
     @resolution = resolution
-    @brand = brand
   end
 
   def turn_on
@@ -23,7 +22,16 @@ class Tv
       "Channel not available"
     end
   end
+
   def actor
     @actor ||= Actor.new("Alexander")
+  end
+
+  def find_actor_movie(actor, channels)
+    if (1..@channels).include?(actor)
+      "Changing to movie that include " + actor
+    else
+      "No channel have a movie including " + actor
+    end
   end
 end
