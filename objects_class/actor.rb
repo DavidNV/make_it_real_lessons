@@ -1,8 +1,11 @@
 class Actor
 
-  def initialize(show_name, actor_name)
+  attr_accessor :genre
+
+  def initialize(show_name, actor_name, genre)
     @show_name = show_name
     @actor_name = actor_name
+    @genre = genre
   end
 
   def altered_carbon_show

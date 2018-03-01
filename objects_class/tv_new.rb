@@ -1,6 +1,7 @@
 require './actor'
 
 class TvNew
+
   attr_accessor :lina
 
   def initialize(app, genre)
@@ -24,12 +25,15 @@ class TvNew
     end
   end
 
-  def new_actor(show_name, actor_name)
-    @lina ||= Actor.new(show_name, actor_name)
+  def new_actor(show_name, actor_name, genre)
+    @lina ||= Actor.new(show_name, actor_name, genre)
   end
 
   def show_actor_shows
     lina.show_name
-    lina.actor
+  end
+
+  def show_actor_genre
+    lina.genre
   end
 end
