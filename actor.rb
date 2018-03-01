@@ -1,4 +1,5 @@
-require '/car.rb'
+require './car'
+
 class Actor
 
   attr_accessor :actor_name

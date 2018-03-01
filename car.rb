@@ -1,5 +1,10 @@
 require './chair'
+
 class Car
+  attr_accessor :model
+  attr_accessor :power
+  attr_accessor :type
+
   def initialize(model, power, type)
     @model = model
     @power = power
@@ -57,5 +62,6 @@ class Car
       end
     else
       "Autodrive is off"
+    end
   end
 end
