@@ -9,11 +9,14 @@ class HomeAppliance
   end
 end
 
-#new_ha = HomeAppliance.new
-#puts new_ha.turn_on
-#puts new_ha.turn_off
-
 class Tv < HomeAppliance
+  attr_reader :brand
+
+  def initialize(brand, resolution)
+    @brand = brand
+    @resolution = resolution
+  end
+
   def turn_on
     "Click"
   end
@@ -21,14 +24,28 @@ class Tv < HomeAppliance
   def turn_off
     "Bye, Click"
   end
-end
 
-puts Tv.new.turn_on
-
-class Car < HomeAppliance
-  def turn_on
-    "Bruuuuuuuum"
+  def get_my_brand
+    self.brand
   end
 end
 
-puts Car.new.turn_off
+class Car < HomeAppliance
+
+  def initialize(brand, model)
+    @brand = brand
+    @model = model
+  end
+
+  def turn_on
+    "Bruuuuuuuum"
+  end
+
+  def turn_off
+    "Sushssssssss"
+  end
+
+  def actor_name
+    @actor.actor_name
+  end
+end
